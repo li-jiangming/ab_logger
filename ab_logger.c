@@ -112,7 +112,7 @@ static log4c_appender_t *ab_log4c_appender = NULL;
 static log4c_layout_t *ab_log4c_layout = NULL;
 static log4c_rollingpolicy_t *ab_log4c_rollingpolicy = NULL;
 
-int ab_logger_init(ab_logger_output to,
+int ab_logger_init(ab_logger_output_e to,
     const char *path, const char *log_prefix,
     unsigned int log_max_nums, unsigned int log_max_size) {
     ab_log4c_layout = log4c_layout_new("ab_log4c_layout");
