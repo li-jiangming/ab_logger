@@ -1,7 +1,7 @@
 #include "ab_logger.h"
 
 int main(int argc, char *argv[]) {
-    ab_logger_init(AB_LOGGER_OUTPUT_TO_STDOUT, ".", "log", 100, 100 * 1024);
+    ab_logger_init(AB_LOGGER_OUTPUT_TO_FILE, ".", "log", 100, 100 * 1024);
     AB_LOGGER_INFO("Startup.\n");
     AB_LOGGER_FATAL("fatal.\n");
     AB_LOGGER_ALERT("alert.\n");
